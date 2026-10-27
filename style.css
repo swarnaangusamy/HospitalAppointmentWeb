@@ -1,0 +1,228 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f2f6fc;
+}
+
+/* Header */
+.site-header {
+  background: #145da0;
+  color: white;
+  padding: 28px 20px;
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hospital-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  background: white;
+  color: #145da0;
+  border-radius: 14px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.site-header p {
+  margin: 0;
+  color: #e5efff;
+  font-size: 15px;
+}
+
+/* Page layout */
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.intro {
+  max-width: 720px;
+  margin: 5px auto 28px;
+  text-align: center;
+}
+
+.intro h2 {
+  margin-bottom: 10px;
+  color: #145da0;
+}
+
+.intro p {
+  color: #526174;
+  line-height: 1.6;
+}
+
+/* Assistant information card */
+.assistant-card {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding: 22px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 22px rgba(15, 23, 42, 0.09);
+}
+
+.assistant-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.assistant-avatar {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: #e7f0fb;
+  color: #145da0;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.assistant-heading h2 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.assistant-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  background: #22c55e;
+  border-radius: 50%;
+}
+
+.welcome-message {
+  margin: 18px 0;
+  padding: 14px;
+  background: #e7f0fb;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.welcome-message p {
+  margin: 0;
+}
+
+.assistant-info {
+  padding: 18px;
+  text-align: center;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.assistant-info h3 {
+  margin: 0 0 8px;
+  color: #145da0;
+}
+
+.assistant-info p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.demo-note {
+  margin: 16px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Feature cards */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.feature-card {
+  padding: 22px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 14px rgba(15, 23, 42, 0.06);
+}
+
+.feature-icon {
+  font-size: 28px;
+}
+
+.feature-card h3 {
+  margin: 12px 0 8px;
+  color: #145da0;
+}
+
+.feature-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 20px;
+  padding: 18px;
+  color: #64748b;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Dialogflow Messenger styling */
+df-messenger {
+  --df-messenger-bot-message: #e7f0fb;
+  --df-messenger-button-titlebar-color: #145da0;
+  --df-messenger-button-titlebar-font-color: #ffffff;
+  --df-messenger-chat-background-color: #ffffff;
+  --df-messenger-font-color: #1f2937;
+  --df-messenger-send-icon: #145da0;
+  --df-messenger-user-message: #dbeafe;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+  .site-header h1 {
+    font-size: 21px;
+  }
+
+  .header-content {
+    align-items: flex-start;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .assistant-card {
+    padding: 15px;
+  }
+}

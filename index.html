@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Appointment Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <div class="hospital-icon">✚</div>
+      <div>
+        <h1>Hospital Appointment Assistant</h1>
+        <p>Your virtual assistant for hospital information and appointment requests</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <section class="intro">
+      <h2>How can we help you?</h2>
+      <p>
+        Ask about hospital departments, doctors, consultation timings,
+        or start an appointment request with our virtual assistant.
+      </p>
+    </section>
+
+    <section class="assistant-card">
+      <div class="assistant-heading">
+        <div class="assistant-avatar">✚</div>
+        <div>
+          <h2>Hospital Assistant</h2>
+          <p><span class="status-dot"></span> Dialogflow assistant</p>
+        </div>
+      </div>
+
+      <div class="welcome-message">
+        <p>
+          Hello! Welcome to the Hospital Appointment Assistant.
+          Click the chat button at the bottom-right of the page to begin.
+        </p>
+      </div>
+
+      <div class="assistant-info">
+        <h3>Chat with the assistant</h3>
+        <p>
+          You can ask about departments, doctors, appointment details,
+          and consultation timings.
+        </p>
+      </div>
+
+      <p class="demo-note">
+        Demonstration project: appointment requests are stored in the local
+        backend only when submitted through the API test below. A real
+        hospital booking system must verify doctor availability.
+      </p>
+
+      <div class="api-test">
+        <h3>Test backend connection</h3>
+        <p>Send a sample appointment to your local backend.</p>
+
+        <button type="button" id="test-api-button">
+          Test Appointment API
+        </button>
+
+        <p id="api-status" role="status"></p>
+      </div>
+    </section>
+
+    <section class="features">
+      <article class="feature-card">
+        <div class="feature-icon">🩺</div>
+        <h3>Departments</h3>
+        <p>Learn about the hospital's departments and specialties.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">👨‍⚕️</div>
+        <h3>Doctor information</h3>
+        <p>Ask about doctors and their areas of specialization.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">📅</div>
+        <h3>Appointments</h3>
+        <p>Walk through an appointment request conversation.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Hospital Appointment Assistant · Dialogflow ES</p>
+  </footer>
+
+  <!-- Load the webpage's JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- Dialogflow Messenger -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+  <df-messenger
+    intent="WELCOME"
+    chat-title="HospitalAppointmentAssistant"
+    agent-id="8d35caa1-45cc-4bf6-870f-aa27b175aa2d"
+    language-code="en">
+  </df-messenger>
+</body>
+</html>
